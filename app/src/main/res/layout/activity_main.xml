@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/pizza"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizzaa" />
+
+    <TextView
+        android:id="@+id/nunya_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nunya_s_pizza_and_drinks"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_below="@id/pizza"
+        android:padding="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We make the best Pizza, Burgers, Hotdogs and Chicken. Free delivery for people arounf the UG Campus"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:background="#FF0266"
+        android:textColor="#FFFFFF"
+        android:id="@+id/description"
+        android:layout_below="@id/nunya_text_view"
+        android:padding="20dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/description"
+        android:layout_margin="20dp"
+        android:id="@+id/rating"
+        >
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/review"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/best_pizza_rated_in_town"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/rating"
+            android:layout_margin="20dp"
+            android:id="@+id/location"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/placeholder"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/legon_campus"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/location"
+            android:layout_margin="20dp"
+            android:id="@+id/clock"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/clock"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/_8_00_am_10pm_daily"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/clock"
+            android:layout_margin="20dp"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/contact"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="+233 27 217 5283"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
